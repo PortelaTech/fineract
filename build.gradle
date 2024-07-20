@@ -72,7 +72,9 @@ buildscript {
         npmRepository = 'https://npm.pkg.github.com'
     }
     repositories {
+        mavenCentral()
         maven { url 'https://plugins.gradle.org/m2/' }
+        jcenter()
     }
 
     dependencies {
@@ -149,6 +151,8 @@ allprojects  {
 
     repositories {
         mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+        jcenter()
     }
 
     apply plugin: 'com.adarshr.test-logger'
